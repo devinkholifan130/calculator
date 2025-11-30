@@ -1,0 +1,109 @@
+/* Background */
+body {
+    background: #ececec;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper */
+.scientific-calculator {
+    width: 380px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+/* Title */
+.scientific-calculator h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Screen */
+.calculator-screen {
+    width: 100%;
+    height: 60px;
+    font-size: 26px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background: #f4f4f4;
+    text-align: right;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+/* Grid buttons */
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* General Buttons */
+.calculator-keys button {
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    background: #e8e8e8;
+    font-weight: 600;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+.calculator-keys button:hover {
+    background: #dcdcdc;
+    transform: translateY(-3px);
+}
+
+/* Operators */
+.operator {
+    background-color: #ff9500;
+    color: white;
+}
+.operator:hover {
+    background-color: #e08900;
+}
+
+/* Function Buttons */
+.function-btn {
+    background-color: #007aff;
+    color: white;
+}
+.function-btn:hover {
+    background-color: #0063c7;
+}
+
+/* Equal */
+.equal-sign {
+    background-color: #34c759;
+    color: white;
+}
+.equal-sign:hover {
+    background-color: #28a745;
+}
+
+/* AC Button */
+.all-clear {
+    background-color: #ff3b30;
+    color: white;
+}
+.all-clear:hover {
+    background-color: #e02c20;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #5856d6;
+    color: white;
+}
+.delete-btn:hover {
+    background-color: #4543b3;
+}

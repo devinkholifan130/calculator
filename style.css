@@ -1,0 +1,177 @@
+/* ===== Body ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e2e6f7, #f4f6ff);
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Calculator Box ===== */
+.calculator {
+    width: 320px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.calculator:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== Screen ===== */
+.calculator-screen {
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #f0f0f0;
+    color: #333;
+        animation: fadeIn 0.4s ease-in-out;
+    box-shadow: inset 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* ===== Buttons ===== */
+.calculator button {
+    width: 22%;
+    height: 55px;
+    margin: 1%;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #f4f4f4;
+        animation: fadeIn 0.4s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: 0.2s ease;
+}
+
+.calculator button:hover {
+    background: #e8e8e8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ===== Operators ===== */
+.calculator .operator {
+    background: #ff9f0a;
+        animation: fadeIn 0.4s ease-in-out;
+    color: white;
+}
+
+.calculator .operator:hover {
+    background: #e58d00;
+}
+
+/* ===== Equal Button ===== */
+.equal-sign {
+    background: #34c759 !important;
+        animation: fadeIn 0.4s ease-in-out;
+    color: white;
+}
+
+.equal-sign:hover {
+    background: #28a745 !important;
+}
+
+/* ===== Clear Button ===== */
+.all-clear {
+    background: #ff3b30 !important;
+        animation: fadeIn 0.4s ease-in-out;
+    color: white;
+}
+
+.all-clear:hover {
+    background: #e02c20 !important;
+}
+
+/* ===== Decimal Button ===== */
+.decimal {
+    background: #dcdcdc;
+        animation: fadeIn 0.4s ease-in-out;
+}
+.decimal:hover {
+    background: #cfcfcf;
+}
+
+/* Extra Function Buttons */
+.function-btn {
+    background: #dfe6e9;
+    color: #2d3436;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+            animation: fadeIn 0.4s ease-in-out;
+}
+
+.function-btn:hover {
+    background: #b2bec3;
+}
+
+/* Backspace Button style */
+.function-btn[value="backspace"] {
+    background: #ffeaa7;
+}
+
+.function-btn[value="backspace"]:hover {
+    background: #fdcb6e;
+}
+
+/* Square & sqrt */
+.function-btn[value="sqrt"],
+.function-btn[value="square"] {
+    background: #74b9ff;
+    color: white;
+}
+
+.function-btn[value="sqrt"]:hover,
+.function-btn[value="square"]:hover {
+    background: #0984e3;
+}
+
+/* Percent */
+.function-btn[value="percent"] {
+    background: #a29bfe;
+    color: white;
+}
+
+.function-btn[value="percent"]:hover {
+    background: #6c5ce7;
+}
+
+/* PlusMinus */
+.function-btn[value="plusminus"] {
+    background: #55efc4;
+}
+
+.function-btn[value="plusminus"]:hover {
+    background: #00b894;
+}
+
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Mobile Button Adjustments ===== */
+.calculator .zero {
+    width: 47%;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    .calculator {
+        width: 90%;
+    }
+}

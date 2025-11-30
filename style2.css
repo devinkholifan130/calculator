@@ -1,0 +1,90 @@
+/* ===== Global Style ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f3ff, #e2e8ff);
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Percentage Calculator Box ===== */
+.percentage-calculator {
+    width: 350px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.percentage-calculator h1 {
+    margin-bottom: 20px;
+    color: #2a2a2a;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* ===== Inputs ===== */
+.percentage-calculator input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1.5px solid #c9c9c9;
+    outline: none;
+    transition: 0.3s;
+}
+
+.percentage-calculator input:focus {
+    border-color: #007aff;
+    box-shadow: 0 0 5px rgba(0,122,255,0.3);
+}
+
+/* ===== Button ===== */
+#calculate-btn {
+    width: 95%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background: #007aff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#calculate-btn:hover {
+    background: #005ecc;
+    box-shadow: 0 4px 10px rgba(0,122,255,0.3);
+}
+
+#calculate-btn:active {
+    background: #004a9c;
+}
+
+/* ===== Result Box ===== */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 420px) {
+    .percentage-calculator {
+        width: 88%;
+        padding: 20px;
+    }
+
+}
